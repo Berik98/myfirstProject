@@ -4,10 +4,10 @@ const Profile = () =>{
     return(
         <div className="content">
             <div className="content__cover"><img
-                src="https://wallpaper-mania.com/wp-content/uploads/2018/09/High_resolution_wallpaper_background_ID_77701372504.jpg"/>
+                src="https://wallpaper-mania.com/wp-content/uploads/2018/09/High_resolution_wallpaper_background_ID_77701372504.jpg" alt="cover" />
             </div>
             <div className="content__avatar">
-                <img src="https://wallarthd.com/wp-content/uploads/2015/05/relax-tiger-image.jpg"/>
+                <img src="https://wallarthd.com/wp-content/uploads/2015/05/relax-tiger-image.jpg" alt="avatar"/>
             </div>
             <div className="content__info">
                 <div className="content__info_about"><h1>Mobark Berik</h1></div>
