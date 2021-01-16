@@ -1,0 +1,22 @@
+.content__myposts{
+    grid-area: mypost;
+    display: grid;
+    justify-items: center;
+    width: 100%;
+}
+.content__text{
+    font-size: 20px;
+    color: #e51837;
+    padding-bottom: 10px;
+}
+.content__textarea{
+    padding-bottom: 10px;
+    width: 50%;
+}
+.content__area{
+    color: #0b6289;
+    width: 100%;
+    height: 50px;
+}
+.content__button{
+}
