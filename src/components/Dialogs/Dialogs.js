@@ -6,9 +6,12 @@ const Dialogs = (props) => {
     return (
         <div className={s.content}>
             <div className={s.users}>
-                <div className={s.user}>Berik</div>
-                <div className={s.user}>Serik</div>
-                <div className={s.user}>Erik</div>
+                <div className={s.user}>
+                    <div className={s.avatar}>
+                        <img src="https://wallarthd.com/wp-content/uploads/2015/05/relax-tiger-image.jpg"/>
+                    </div>
+                    <div className={s.user__name}>Berik</div>
+                </div>
             </div>
             <div className={s.message}>
                 <div className={s.message__text}>Message</div>

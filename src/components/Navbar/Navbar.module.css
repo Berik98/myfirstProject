@@ -11,15 +11,19 @@
 }
 .nav:hover{
     border-right: 3px inset #991199;
+    padding-left: 3px;
 }
 .nav__link{
     padding-left: 60px;
     cursor: pointer;
-    color: #e90000;
 }
-.nav__link.active{
+.a:active, /* активная/посещенная ссылка */
+.a:hover,  /* при наведении */
+.a {
+    text-decoration: none;
     color: black;
 }
+
 .nav__link:hover{
     background: #991199;
     border-radius: 5px  ;
