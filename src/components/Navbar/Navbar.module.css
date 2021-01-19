@@ -1,4 +1,4 @@
-.nav{
+.nav {
     grid-area: n;
     padding-top: 20px;
     font-size: 20px;
@@ -9,22 +9,25 @@
     grid-template-rows: repeat(5, 40px);
     grid-template-columns: 200px;
 }
-.nav:hover{
+
+.nav:hover {
     border-right: 3px inset #991199;
     padding-left: 3px;
 }
-.nav__link{
+
+.nav__link {
     padding-left: 60px;
     cursor: pointer;
 }
-.a:active, /* активная/посещенная ссылка */
-.a:hover,  /* при наведении */
-.a {
+
+.nav__link a{
     text-decoration: none;
     color: black;
 }
-
-.nav__link:hover{
+.nav__link a.active{
+    color: #e90000;
+}
+.nav__link:hover {
     background: #991199;
-    border-radius: 5px  ;
+    border-radius: 5px;
 }
