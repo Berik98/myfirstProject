@@ -5,7 +5,7 @@ const Header = () => {
     return (
 
         <header className={s.header}>
-            <img src="https://www.pukta.net/wp-content/uploads/2020/10/logo_yazilim.jpg" />
+            <img src="https://clipart-best.com/img/tom-and-jerry/tom-and-jerry-clip-art-9.png" />
         </header>
     );
 }

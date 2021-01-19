@@ -1,0 +1,64 @@
+.content{
+    display: grid;
+    grid-template-areas: "users message";
+    grid-template-columns: 1fr 3fr;
+    grid-gap: 10px;
+    height: calc(100vh - 60px);
+}
+.users{
+    grid-area: users;
+    background-color: #d8c2ff;
+    border-radius: 5px;
+    padding-top: 5px;
+}
+
+.user{
+    font-size: 20px;
+    list-style-type: none;
+    padding-top: 15px;
+    padding-left: 20%;
+    cursor: pointer;
+}
+
+.user:hover{
+    background-color: #f9f5ff;
+    border-radius: 5px;
+}
+
+.message{
+    grid-area: message;
+    background-color: #f9f5ff;
+    border-radius: 5px;
+    width: 70%;
+    display: grid;
+    grid-template-areas: "t t"
+                          "s s";
+    grid-template-rows: 7fr 1fr;
+    grid-template-columns: 1fr;
+}
+.message__text{
+    grid-area: t;
+}
+.message__send{
+    grid-area: s;
+    display: grid;
+    grid-template-areas: "a b";
+    grid-template-rows: 1fr;
+    grid-template-columns: 4fr 1fr ;
+}
+.message__area{
+    grid-area: a;
+    width: 100%;
+    padding-left: 10px;
+}
+.message__textarea{
+    height: 90%;
+    width: 100%;
+}
+.message__button{
+    width: 100%;
+    grid-area: b;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}

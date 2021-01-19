@@ -1,6 +1,7 @@
 import React from "react"
 import s from "./MyPosts.module.css";
 import Post from "./Post/Post";
+import ss from "../../button.module.css";
 
 const MyPosts = () => {
     return (
@@ -11,10 +12,12 @@ const MyPosts = () => {
                     <textarea className={s.content__area} placeholder="your post..."></textarea>
                 </div>
                 <div className={s.content__button}>
-                    <button>Send</button>
+                    <button type="submit" className={ss.button}>Send</button>
                 </div>
             </div>
-            <Post />
+            <div className={s.content__text}> New posts</div>
+            <Post message="It's my first project" />
+            <Post message = "Good luck" />
         </div>
     );
 }

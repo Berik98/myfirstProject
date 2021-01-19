@@ -6,9 +6,11 @@
 }
 .content__text{
     font-size: 20px;
-    color: #e51837;
+    color: #e90000;
     padding-bottom: 10px;
+    text-align: center;
 }
+
 .content__textarea{
     padding-bottom: 10px;
     width: 50%;
@@ -19,4 +21,8 @@
     height: 50px;
 }
 .content__button{
+    padding-bottom: 10px;
+    width: 50%;
+    display: flex;
+    justify-content: flex-end;
 }
