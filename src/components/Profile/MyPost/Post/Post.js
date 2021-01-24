@@ -5,12 +5,13 @@ const Post = (props) => {
     return (
         <div className={s.content__newpost}>
             <div className={s.content__post}>
-                <img src="https://wallarthd.com/wp-content/uploads/2015/05/relax-tiger-image.jpg" alt="avatar"/>
+                <img src="https://i.imgur.com/QgUzuSF.jpg" alt="avatar"/>
                 <div className={s.text}>
                     {props.message}
                 </div>
                 <div className={s.like}>
-                    <span>Like</span>
+                    <span>Like </span>
+                    {props.likesCount}
                 </div>
 
             </div>

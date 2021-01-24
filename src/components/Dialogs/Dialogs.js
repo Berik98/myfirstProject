@@ -1,19 +1,28 @@
 import React from 'react';
 import s from "./Dialogs.module.css";
 import ss from "../button.module.css"
-import User from "./users/User";
-import {BrowserRouter} from "react-router-dom";
+import Dialog from "./Users/Dialog";
+import {BrowserRouter, NavLink} from "react-router-dom";
+import Messages from "./Messages/Messages";
 
 const Dialogs = (props) => {
+
+    let dialogs = props.dialogsData.map( (dialog) =>
+        (<Dialog name={dialog.name} id={dialog.id} avatar={dialog.avatar}/>)
+    );
+    let messages = props.messagesData.map((message) =>
+        (<Messages message={message.message} id={message.id}/>)
+    );
     return (
         <BrowserRouter>
             <div className={s.content}>
-                <div className={s.users}>
-                    <User name = 'Berik' avatar = 'https://wallarthd.com/wp-content/uploads/2015/05/relax-tiger-image.jpg'/>
-                    <User name = 'Serik' avatar = 'https://get.wallhere.com/photo/1600x1200-px-action-adventure-alien-aliens-Avatar-fantasy-fi-fighting-futuristic-sci-warrior-1635355.jpg'/>
+                <div className={s.dialogs}>
+                    {dialogs}
                 </div>
                 <div className={s.message}>
-                    <div className={s.message__text}>Message</div>
+                    <div className={s.message__item}>
+                        {messages}
+                    </div>
                     <div className={s.message__send}>
                         <div className={s.message__area}>
                             <textarea className={s.message__textarea} placeholder="Write a message"></textarea>

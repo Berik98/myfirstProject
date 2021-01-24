@@ -3,7 +3,11 @@ import s from "./MyPosts.module.css";
 import Post from "./Post/Post";
 import ss from "../../button.module.css";
 
-const MyPosts = () => {
+
+const MyPosts = (props) => {
+         let postItem = props.post.map((item) =>
+        (<Post message={item.post} id={item.id} likesCount={item.likesCount}/>)
+    );
     return (
         <div>
             <div className={s.content__myposts}>
@@ -16,8 +20,7 @@ const MyPosts = () => {
                 </div>
             </div>
             <div className={s.content__text}> New posts</div>
-            <Post message="It's my first project" />
-            <Post message = "Good luck" />
+            {postItem}
         </div>
     );
 }
