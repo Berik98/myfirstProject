@@ -7,12 +7,17 @@ import Messages from "./Messages/Messages";
 
 const Dialogs = (props) => {
 
-    let dialogs = props.dialogsData.map( (dialog) =>
+    let dialogs = props.state.dialogsData.map( (dialog) =>
         (<Dialog name={dialog.name} id={dialog.id} avatar={dialog.avatar}/>)
     );
-    let messages = props.messagesData.map((message) =>
-        (<Messages message={message.message} id={message.id}/>)
+    let messages = props.state.messagesData.map((message) =>
+        (<Messages message={message.message} id={message.id} avatar = {message.avatar}/>)
     );
+    let sendNewMessage = React.createRef();
+    let sendMessage = () => {
+        let text = sendNewMessage.current.value;
+        alert(text);
+    }
     return (
         <BrowserRouter>
             <div className={s.content}>
@@ -25,10 +30,10 @@ const Dialogs = (props) => {
                     </div>
                     <div className={s.message__send}>
                         <div className={s.message__area}>
-                            <textarea className={s.message__textarea} placeholder="Write a message"></textarea>
+                            <textarea ref={sendNewMessage} className={s.message__textarea} placeholder="Write a message"></textarea>
                         </div>
                         <div className={s.message__button}>
-                            <button type="submit" className={ss.button}>Send</button>
+                            <button onClick={sendMessage} type="submit" className={ss.button}>Send</button>
                         </div>
                     </div>
                 </div>

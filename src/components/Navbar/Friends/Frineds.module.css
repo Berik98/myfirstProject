@@ -1,0 +1,24 @@
+.friends{
+    display: flex;
+    justify-content: center;
+}
+.friend{
+    padding: 5px;
+    cursor: pointer;
+    display: flex;
+    flex-flow: column;
+}
+.friendsName{
+    font-size: 14px;
+    text-align: center;
+}
+.friendsName:hover{
+    color: #e90000;
+    cursor: pointer;
+}
+.friend img{
+    width: 40px;
+    height: 40px;
+    border-radius: 40px;
+    object-fit: cover;
+}

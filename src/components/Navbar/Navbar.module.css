@@ -6,7 +6,7 @@
     display: grid;
     justify-content: center;
     align-items: center;
-    grid-template-rows: repeat(5, 40px);
+    grid-template-rows: repeat(6, 40px) 100px;
     grid-template-columns: 200px;
 }
 
@@ -30,4 +30,9 @@
 .nav__link:hover {
     background: #991199;
     border-radius: 5px;
+}
+.friend{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    justify-content: center;
 }
